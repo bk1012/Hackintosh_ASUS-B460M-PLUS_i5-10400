@@ -6,12 +6,11 @@ CPU: 第10代英特尔® 酷睿™ Intel i5-10400 核显
 
 网卡: COMFAST AX200-PRO 英特尔
 
+引导：openCore 0.7.5
 
-引导：openCore 0.7.4
+OSX系统：Monterey 12.1 Beta
 
-OSX系统：Big Sur 11.6
-
-✅ 蓝牙
+<!-- ✅ 蓝牙 -->
 
 ✅ 唤醒
 
