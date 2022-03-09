@@ -8,7 +8,7 @@ CPU: 第10代英特尔® 酷睿™ Intel i5-10400 核显
 
 引导：openCore 0.7.8
 
-OSX系统：Monterey 12.1 Beta
+OSX系统：Monterey 12.2.1
 
 ✅ 蓝牙
 
