@@ -54,7 +54,7 @@
                 <key>ResetHwSig</key>
                 <false/>
                 <key>ResetLogoStatus</key>
-                <false/>
+                <true/>
                 <key>SyncTableIds</key>
                 <false/>
             </dict>
@@ -82,7 +82,7 @@
                 <key>EnableSafeModeSlide</key>
                 <true/>
                 <key>EnableWriteUnprotector</key>
-                <true/>
+                <false/>
                 <key>ForceBooterSignature</key>
                 <false/>
                 <key>ForceExitBootServices</key>
@@ -98,11 +98,11 @@
                 <key>ProvideMaxSlide</key>
                 <integer>0</integer>
                 <key>RebuildAppleMemoryMap</key>
-                <false/>
+                <true/>
                 <key>ResizeAppleGpuBars</key>
                 <integer>-1</integer>
                 <key>SetupVirtualMap</key>
-                <false/>
+                <true/>
                 <key>SignalAppleOS</key>
                 <false/>
                 <key>SyncRuntimePermissions</key>
@@ -113,58 +113,14 @@
         <dict>
             <key>Add</key>
             <dict>
-                <key>##PciRoot(0x0)/Pci(0x2,0x0)</key>
+                <key>PciRoot(0x0)/Pci(0x2,0x0)  </key>
                 <dict>
-                    <key>#备注</key>
-                    <string>使用时记得去掉中文注释内容</string>
-                    <key>#推荐机型</key>
-                    <string>iMac20,1或iMac20,2</string>
-                    <key>#适用</key>
-                    <string>使用核显辅助独显硬解加速</string>
-                    <key>AAPL,ig-platform-id</key>
-                    <data>AwDImw==</data>
-                    <key>model</key>
-                    <string>Intel UHD Graphics 630</string>
-                </dict>
-                <key>#PciRoot(0x0)/Pci(0x2,0x0)</key>
-                <dict>
-                    <key>#ig-platform-id备选方案</key>
-                    <string>00009B3E</string>
-                    <key>#备注</key>
-                    <string>使用时记得去掉中文注释内容</string>
-                    <key>#推荐机型</key>
-                    <string>iMac20,1或iMac20,2</string>
-                    <key>#适用</key>
-                    <string>无独显，使用核显作为主显卡，视频输出</string>
                     <key>AAPL,ig-platform-id</key>
                     <data>BwCbPg==</data>
                     <key>framebuffer-patch-enable</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-stolenmem</key>
                     <data>AAAwAQ==</data>
-                    <key>model</key>
-                    <string>Intel UHD Graphics 630</string>
-                </dict>
-                <key>#intel i225-V以太网卡仿冒ID</key>
-                <dict>
-                    <key>#备注</key>
-                    <string>使用时记得去掉中文注释内容</string>
-                    <key>#备选设备地址</key>
-                    <string>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)</string>
-                    <key>#首选设备地址</key>
-                    <string>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</string>
-                    <key>device-id</key>
-                    <data>8hUAAA==</data>
-                </dict>
-                <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-                <dict>
-                    <key>layout-id</key>
-                    <integer>1</integer>
-                </dict>
-                <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-                <dict>
-                    <key>AAPL,ig-platform-id</key>
-                    <data>EjRWeA==</data>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -564,7 +520,7 @@
                 <key>DisplayLevel</key>
                 <integer>2147483650</integer>
                 <key>LogModules</key>
-                <string></string>
+                <string>*</string>
                 <key>SysReport</key>
                 <false/>
                 <key>Target</key>
